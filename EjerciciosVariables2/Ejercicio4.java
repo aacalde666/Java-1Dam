@@ -15,11 +15,7 @@ public class Ejercicio4 {
 		if (n<-100 || n> 100) {
 			System.out.println("no es un número valido");
 		}else {
-			int sig = Integer.signum(n);
-			n = Math.abs(n);
-			int num = n;
-			num *= sig;
-			System.out.println("este número ("+num+") es valido");
+			System.out.println("este número ("+n+") es valido");
 		}
 	}
 
