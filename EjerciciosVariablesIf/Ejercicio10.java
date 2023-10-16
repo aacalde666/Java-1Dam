@@ -19,18 +19,17 @@ public class Ejercicio10 {
 		double long2 = teclado.nextDouble();
 		System.out.print("Escribe el tercer lado: ");
 		double long3 = teclado.nextDouble();
-		boolean tri = (long1 + long2 > long3) || (long1 + long3 > long2) || (long2 + long3 > long1);
-		if (tri) {
-			if (long1==long2&&long2==long3) {
-				System.out.println("Es un triangulo Equilatero");
-			}else if (long1==long2||long2==long3||long3==long1) {
-				System.out.println("Es un triangulo Isosceles");
-			}else {
-				System.out.println("Es un triangulo Escaleno");
-			}
-		}else {
+		boolean esTriangulo = long1 < long2+long3 || long2 < long1+long3 || long3 < long1+long2;
+		if (!esTriangulo) {
 			System.out.println("No es un triangulo");
+		}else if (long1==long2&&long2==long3) {
+			System.out.println("Es un triangulo Equilatero");
+		}else if (long1==long2||long2==long3||long3==long1) {
+			System.out.println("Es un triangulo Isosceles");
+		}else {
+			System.out.println("Es un triangulo Escaleno");
 		}
+		
 	}
 
 }
