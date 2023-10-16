@@ -29,6 +29,17 @@ public class Ejercicio10 {
 		}else {
 			System.out.println("Es un triangulo Escaleno");
 		}
+		//Ejemplo con switch-case
+		switch ((!esTriangulo)?0:(long1==long2&&long2==long3)?1:(long1==long2||long2==long3||long3==long1)?2:3){
+			case 0:
+				System.out.println("No es un triangulo");
+			case 1:
+				System.out.println("Es un triangulo Equilatero");
+			case 2:
+				System.out.println("Es un triangulo Isosceles");
+			case 3:
+				System.out.println("Es un triangulo Escaleno");
+		}
 		
 	}
 
