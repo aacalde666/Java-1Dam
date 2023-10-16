@@ -13,8 +13,8 @@ public class Ejercicio12 {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Escribe un día de la semana ej:lunes");
 		String dia = teclado.nextLine();
-		String p = dia.toLowerCase();
-		switch (p){
+		dia = dia.toLowerCase();
+		switch (dia){
 			case "lunes","martes","miercoles","jueves","viernes":
 				System.out.println("Se trabaja");
 				break;
