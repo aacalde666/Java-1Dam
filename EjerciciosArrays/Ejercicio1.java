@@ -18,6 +18,19 @@ public class Ejercicio1 {
 		for (int i=numeros.length-1;i>=0;i--) {
 			System.out.print(numeros[i]+" ");
 		}
+		///////////////Otro planteamiento
+		//seria el caso en el que la cantidad de numeros que se van a usar no la podemos saber
+		//hasta despues de haber declarado el arrey
+		int[] numeros2=new int [10000];
+		System.out.print("Cuantos números vas a introducir? (menos de 10000): ");
+		int N1=teclado.nextInt();
+		for (int i=0;i<N1;i++) {
+			System.out.print("Introduce número: ");
+			numeros2[i]=teclado.nextInt();
+		}System.out.println();
+		for (int i=N1-1;i>=0;i--) {
+			System.out.print(numeros2[i]+" ");
+		}
 		teclado.close();
 	}
 
